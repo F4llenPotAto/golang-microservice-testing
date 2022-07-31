@@ -13,4 +13,6 @@ func NewProducts(l *log.Logger) *Products {
 	return &Products{l}
 }
 
-func (p *Products) ServeHTTP(rw http.ResponseWriter, h *http.Request)
+func (p *Products) ServeHTTP(rw http.ResponseWriter, h *http.Request) {
+
+}
