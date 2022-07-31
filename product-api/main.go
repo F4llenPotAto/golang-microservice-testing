@@ -8,18 +8,18 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/F4llenPotAto/golang-microservice-testing/handlers"
+	"github.com/F4llenPotAto/golang-microservice-testing/product-api/handlers"
 )
 
 func main() {
+	env.Parse()
+
 	l := log.New(os.Stdout, "product-api", log.LstdFlags)
 
-	hh := handlers.NewHello(l)
-	gh := handlers.NewGoodbye(l)
+	ph := handlers.NewProducts(l)
 
 	sm := http.NewServeMux()
-	sm.Handle("/", hh)
-	sm.Handle("/goodbye", gh)
+	sm.Handle("/", ph)
 
 	s := &http.Server{
 		Addr:         "localhost:9090",
