@@ -1,8 +1,11 @@
 package handlers
 
 import (
+	"encoding/json"
 	"log"
 	"net/http"
+
+	"product-api/data"
 )
 
 type Products struct {
@@ -14,5 +17,6 @@ func NewProducts(l *log.Logger) *Products {
 }
 
 func (p *Products) ServeHTTP(rw http.ResponseWriter, h *http.Request) {
-
+	lp := data.GetProducts()
+	json.Marshal()
 }
