@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/F4llenPotAto/golang-microservice-testing/product-api/handlers"
+	"product-api/handlers"
 )
 
 func main() {
