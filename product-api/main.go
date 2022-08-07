@@ -9,6 +9,7 @@ import (
 	"time"
 
 	"github.com/F4llenPotAto/golang-microservice-testing/product-api/handlers"
+	"github.com/nicholasjackson/env"
 )
 
 func main() {
