@@ -8,10 +8,11 @@ import (
 	"os/signal"
 	"time"
 
-	"product-api/handlers"
+	"github.com/F4llenPotAto/golang-microservice-testing/product-api/handlers"
 )
 
 func main() {
+
 	env.Parse()
 
 	l := log.New(os.Stdout, "product-api", log.LstdFlags)

@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"product-api/data"
+	"github.com/F4llenPotAto/golang-microservice-testing/product-api/data"
 )
 
 type Products struct {
